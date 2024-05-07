@@ -72,3 +72,21 @@ Password: 123
 Address: dlkfh
 
 
+Name: d
+Email: "c:\Users\HP\Desktop\OOP
+Password: PROJECT-SPRING
+Address: 2024\OOP_PPROJECT_SPRING2024\1\2\"
+
+
+Name: 
+Email: 
+Password: 
+Address: 
+
+
+Name: afraz
+Email: hello
+Password: 123
+Address: ad
+
+

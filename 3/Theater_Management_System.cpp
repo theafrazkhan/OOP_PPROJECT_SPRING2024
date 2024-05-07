@@ -1,11 +1,8 @@
 //============================================================================
 // Name         : Source.cpp
-// Author       : Sagynbek Talgatuly st4121
+// Author       : Afraz khan, Abdul Rehman, Farooq Khan
 // Version      : 1.0
-// Date Created : 23/02/2021
-// Date Modified: 24/02/2021
-// Copyright    : All rights are reserved
-// Description  : Assignment 1. Movie Theater Booking system
+// Description  : Project:  Movie Theater Booking system
 //============================================================================
 
 #include <iostream>
@@ -563,9 +560,13 @@ bool start(int &currentUserType, string& currentUserID, Admin* ptr1, Guest* ptr2
 	cout << "Welcome to the movies booking system" << endl;
 	bool flag = false;;
 	do {
-		cout << "Enter 1 --> if you are an admin" << endl;
-		cout << "Enter 2 --> if you are a guest" << endl;
-		cout << "Enter 3 --> to exit the system" << endl;
+	cout<<"\t\t\t\t\t __________________________________________"<<endl;
+    cout<<"\t\t\t\t\t|                                          |"<<endl;
+    cout<<"\t\t\t\t\t|             Irrey Cineplex                |"<<endl;
+    cout<<"\t\t\t\t\t|__________________________________________|"<<endl<<endl<<endl;
+    cout<<"\t\t\t\t\t\t1. Admin login " << endl <<
+		  "\t\t\t\t\t\t2. Guest login " << endl <<
+		  "\t\t\t\t\t\t3. Exit System " << endl;
 		cin >> input;
 		system("clear");
 		if (input == "1") {
