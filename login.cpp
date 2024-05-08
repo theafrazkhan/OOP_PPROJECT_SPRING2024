@@ -427,7 +427,7 @@ int main()
     ticket TKT;
     cout<<"\t\t\t\t\t __________________________________________"<<endl;
     cout<<"\t\t\t\t\t|                                          |"<<endl;
-    cout<<"\t\t\t\t\t|       Welcome to Asgard Cineplex         |"<<endl;
+    cout<<"\t\t\t\t\t|       Welcome to farooq Cineplex         |"<<endl;
     cout<<"\t\t\t\t\t|__________________________________________|"<<endl<<endl<<endl;
     cout<<"\t\t\t\t\t\tDo you have an account?"<<endl;
     cout<<"\t\t\t\t\t\tY/N"<<endl;
@@ -446,7 +446,7 @@ int main()
     {
         cout<<"\t\t\t\t\t __________________________________________"<<endl;
         cout<<"\t\t\t\t\t|                                          |"<<endl;
-        cout<<"\t\t\t\t\t|       Welcome to Asgard Cineplex         |"<<endl;
+        cout<<"\t\t\t\t\t|       Welcome to farooq Cineplex         |"<<endl;
         cout<<"\t\t\t\t\t|__________________________________________|"<<endl<<endl<<endl;
         cout<<"\t\t\t\t\t\tPlease choose your option:"<<endl;
         cout<<"\t\t\t\t\t\t1.Check all movies"<<endl;
