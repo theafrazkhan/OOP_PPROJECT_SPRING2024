@@ -16,20 +16,68 @@ public:
 
     void sign_up()
     {
+    signUp:
         ofstream outfile;
         outfile.open("user.txt", ios::out | ios::app);
         cout << "Enter your name: ";
-        cin >> name;
-        outfile << "Name: " << name << "\n";
+        getline(cin, name);
         cout << "\nEnter your email: ";
         cin >> email;
-        outfile << "Email: " << email << "\n";
+
+        if (!validate_email(email))
+        {
+            int choise;
+            cout << "Invalid Email, press 0 for main menu and 1 to enter email: ";
+            cin >> choise;
+
+            switch (choise)
+            {
+            options:
+            case 0:
+                // goto main
+            case 1:
+                goto signUp;
+            default:
+                cout << "Invalid choise! press 0 for main menu and 1 to enter email: ";
+                cin >> choise;
+                goto options;
+            }
+        }
+
         cout << "\nEnter your password: ";
         cin >> pass;
-        outfile << "Password: " << pass << "\n";
+
+
+        if (!validate_password(pass))
+        {
+            int choise;
+            cout << "Invalid password, press 0 for main menu and 1 to enter correct credintials: ";
+            cin >> choise;
+
+            switch (choise)
+            {
+            options:
+            case 0:
+                // goto main
+            case 1:
+                goto signUp;
+            default:
+                cout << "Invalid choise! press 0 for main menu and 1 to enter email: ";
+                cin >> choise;
+                goto options;
+            }
+        }
+
+
         cout << "\nEnter your address: ";
+
         cin >> address;
         cout << endl;
+
+        outfile << "Name: " << name << "\n";
+        outfile << "Email: " << email << "\n";
+        outfile << "Password: " << pass << "\n";
+
         outfile << "Address: " << address << "\n\n\n";
     }
     bool validate_email(const string email)
@@ -120,7 +168,6 @@ public:
     void sign_in()
     {
     signIn:
-        int choise;
         cout << "Please enter your email: ";
         cin >> email;
         cout << "\nPlease enter your password:\n";
