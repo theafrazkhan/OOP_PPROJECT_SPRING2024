@@ -90,3 +90,39 @@ Password: 123
 Address: ad
 
 
+Name: afraz
+Email: khan
+Password: 123
+Address: ad
+
+
+Name: afraz
+Email: kha
+Password: 123
+Address: ad
+
+
+Name: afra
+Email: ahfail
+Password: 1256
+Address: hell
+
+
+Name: d
+Email: "c:\Users\HP\Desktop\OOP
+Password: PROJECT-SPRING
+Address: 2024\OOP_PPROJECT_SPRING2024\"
+
+
+Name: G
+Email: 2024\OOP_PPROJECT_SPRING2024\"
+Password: ;
+Address: if
+
+
+Name: G
+Email: 2024\OOP_PPROJECT_SPRING2024\"
+Password: ;
+Address: if
+
+
