@@ -1,9 +1,7 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <fstream>
-#include <iosfwd>
+
+int main ();
 using namespace std;
+        
 
 class User
 {
@@ -20,6 +18,7 @@ public:
         ofstream outfile;
         outfile.open("user.txt", ios::out | ios::app);
         cout << "Enter your name: ";
+        cin.ignore();
         getline(cin, name);
         cout << "\nEnter your email: ";
         cin >> email;
@@ -35,6 +34,8 @@ public:
             options:
             case 0:
                 // goto main
+
+                main();
             case 1:
                 goto signUp;
             default:
@@ -56,15 +57,16 @@ public:
 
             switch (choise)
             {
-            options:
+            uper:
             case 0:
                 // goto main
+                main();
             case 1:
                 goto signUp;
             default:
                 cout << "Invalid choise! press 0 for main menu and 1 to enter email: ";
                 cin >> choise;
-                goto options;
+                goto uper;
             }
         }
 
@@ -82,6 +84,7 @@ public:
     }
     bool validate_email(const string email)
     {
+
         bool valid = false;
         bool at = false, dot = false, com = false;
 
@@ -172,7 +175,7 @@ public:
         cin >> email;
         cout << "\nPlease enter your password:\n";
         cin >> pass;
-
+        
         Check(); // cheaks if the email and password match
     }
     void Check() // cheaks if the email and password match
@@ -190,6 +193,7 @@ public:
             if (c1 == false and line == chek1)
             {
                 c1 = true;
+                
             }
             if (c2 == false and chek2 == line)
             {
@@ -201,22 +205,6 @@ public:
                 break;
             }
         }
-        int choose;
-        if (!chk)
-        {
-            cout << "Your password or email is wrong or you haven't registered.\nPlease re-enter or register::\n";
-        h1:
-            cout << "Press 1 for register\nPress 2 for resubmission\n";
-            cin >> choose;
-            if (choose == 1)
-                sign_up();
-            else if (choose == 2)
-                sign_in();
-            else
-                cout << "Invalid option";
-            goto h1;
-        }
-        else
-            return;
+
     }
 };

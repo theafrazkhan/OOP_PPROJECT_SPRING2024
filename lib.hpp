@@ -1,3 +1,9 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <fstream>
+#include <iosfwd>
+#include "usertime.hpp"
 #include "user.hpp"
 #include "movie.hpp"
 #include "theater.hpp"

@@ -5,7 +5,7 @@ public:
     vector<string> v;
     void getdata()
     {
-        fstream input;
+        fstream input;// FILE *input
         input.open("movielist.txt", ios::in);
         string line;
         while (input)
