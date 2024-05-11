@@ -266,4 +266,5 @@ bool TIME::Check(int cnt, theater t, int x)
             return 0;
         return true;
     }
+    return false;
 }
